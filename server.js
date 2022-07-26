@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const path = require('path');
 
 const connectDB = require('./db');
 
@@ -16,9 +17,11 @@ const user = require('./routes/userRoutes');
 app.use('/api', user);
 
 // test route
-app.get('/', (req, res) => {
-  res.send('<h1>Hello World</h1> <h4>This is a test route</h4>');
-});
+// app.get('/', (req, res) => {
+//   res.send('<h1>Hello World</h1> <h4>This is a test route</h4>');
+// });
+
+app.use(express.static(path.join(__dirname, 'frontend/build')));
 
 app.get('/products', (req, res) => {
   res.send([
