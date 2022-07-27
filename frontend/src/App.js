@@ -17,8 +17,8 @@ function App() {
   return (
     <div className='App'>
       <header className='App-header'>
-        <h1> Hello Front-End </h1>
-        <h4> This is a EC2 Test </h4>
+        <h1> Hello Front-End Success Auto Deploy CI/CD </h1>
+        <h4> This is a EC2 Test CI/CD </h4>
         <div className='product-wrapper'>
           {data.map((product) => (
             <div className='product' key={product.id}>
