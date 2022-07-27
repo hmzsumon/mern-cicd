@@ -28,6 +28,8 @@ app.get('/products', (req, res) => {
     { id: 101, name: 'product 1', price: 100 },
     { id: 102, name: 'product 2', price: 200 },
     { id: 103, name: 'product 3', price: 300 },
+    { id: 104, name: 'product 4', price: 400 },
+    { id: 105, name: 'product 5', price: 500 },
   ]);
 });
 
